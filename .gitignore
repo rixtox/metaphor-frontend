@@ -38,3 +38,7 @@ www-ghpages
 Icon?
 ehthumbs.db
 Thumbs.db
+
+*~
+\#.*\#
+.\#*
