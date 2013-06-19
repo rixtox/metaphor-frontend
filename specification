@@ -1,0 +1,13 @@
+Functions
+	User System with Privileged Groups
+		- Super Administrators
+			- System Config
+		- Administrators
+			- Users Manage
+		- Editors
+			- Post Topics
+		- Authors
+			- Post Articles
+	Topic Management
+		- If there is an event going to take place, a topic would be placed by 
+			editors as an instruction for authors to write articles about.
