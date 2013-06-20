@@ -3,5 +3,5 @@ define(function (require) {
     // with a relative require call,
     // like:
     // var util = require('./util');
-    console.log([$, _, Backbone, require]);
+    console.log([$, _, Backbone, require], arguments);
 });

@@ -4,12 +4,22 @@
 // except for 'app' ones, which are in a sibling
 // directory.
 requirejs.config({
-    baseUrl: 'js/lib',
-    paths: {
-        app: '../app'
-    }
+	baseUrl: 'js/lib',
+	paths: {
+		app: '../app'
+	},
+	shim: {
+		'bootstrap': {
+			deps: ['jquery'],
+			exports: 'jquery'
+		}
+	}
 });
 
 // Start loading the main app file. Put all of
 // your application logic in there.
-requirejs(['jquery', 'underscore', 'backbone', 'bootstrap', 'app/main']);
+requirejs(['jquery', 'underscore', 'backbone', 'bootstrap'],
+	function($, _, Backbone) {
+		requirejs(['app/main']);
+	}
+);
