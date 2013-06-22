@@ -1,0 +1,48 @@
+// For any third party dependencies, like jQuery, place them in the lib folder.
+
+// Configure loading modules from the lib directory,
+// except for 'app' ones, which are in a sibling
+// directory.
+requirejs.config({
+	baseUrl: 'js/lib',
+	paths: {
+<<<<<<< HEAD
+		app: '../app',
+		templates: '../../templates',
+		'css-style': '../../css',
+		'less-style': '../../less'
+=======
+		app: '../app'
+>>>>>>> d0092cb322b01c00522b0ecc96223566a6418ed6
+	},
+	shim: {
+		'bootstrap': {
+			deps: ['jquery'],
+			exports: 'jquery'
+		}
+<<<<<<< HEAD
+	},
+	packages: [
+		{
+			name: 'css',
+			location: 'require-css',
+			main: 'css'
+		},
+		{
+			name: 'less',
+			location: 'require-less',
+			main: 'less'
+		}
+	]
+=======
+	}
+>>>>>>> d0092cb322b01c00522b0ecc96223566a6418ed6
+});
+
+// Start loading the main app file. Put all of
+// your application logic in there.
+requirejs(['jquery', 'underscore', 'backbone', 'bootstrap'],
+	function($, _, Backbone) {
+		requirejs(['app/main']);
+	}
+);
