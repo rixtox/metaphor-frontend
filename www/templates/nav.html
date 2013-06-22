@@ -1,0 +1,87 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="brand" href="#" style="color:rgb(0, 184, 230);">Metaphor</a>
+			<div class="nav-collapse collapse">
+				<ul class="nav pull-right">
+					<li class="dropdown dropdown-signup">
+						<a id="nav-signup-btn" class="dropdown-toggle" href="#" data-toggle="dropdown">
+							Sign Up <strong class="caret"></strong>
+						</a>
+						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+							<form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+	
+								<div class="control">
+									<input type="text" name="username" id="signup_username" placeholder="User name"></div>
+								<div class="control">
+									<input type="password" name="password" id="signup_password" placeholder="Password"></div>
+								<div class="control">
+									<input type="password" name="password_repeat" id="signup_password_repeat" placeholder="Repeat password"></div>
+								<div class="control">
+									<input type="text" name="display_name" id="signup_display_name" placeholder="Display name"></div>
+								<div class="control">
+									<input type="email" name="email" id="signup_email" placeholder="Email"></div>
+								<input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign Up" />
+							</form>
+						</div>
+					</li>
+					<li class="divider-vertical"></li>
+					<li class="dropdown">
+						<a id="nav-signin-btn" class="dropdown-toggle" href="#" data-toggle="dropdown">
+							Sign In <strong class="caret"></strong>
+						</a>
+						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+							<form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
+								<div class="control">
+									<input id="user_username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" placeholder="User name" />
+								</div>
+								<div class="control">
+									<input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder="Password" />
+								</div>
+								<div class="control">
+									<input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" checked/>
+									<label class="string optional" for="user_remember_me">Remember me</label>
+								</div>
+								<input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
+							</form>
+						</div>
+					</li>
+					<li class="divider-vertical"></li>
+					<li>
+						<p class="navbar-text">
+							Welcome,
+							<a href="#" class="navbar-link">Admin</a>
+						</p>
+					</li>
+				</ul>
+				<ul class="nav">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#topics">Topics</a>
+					</li>
+					<li>
+						<a href="#users">Users</a>
+					</li>
+					<li>
+						<!-- Admin Only -->
+						<a href="#settings">Settings</a>
+					</li>
+					<li>
+						<a href="#about">About</a>
+					</li>
+					<li>
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+</div>

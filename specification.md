@@ -40,43 +40,50 @@
 # API(v1.0)
 	(prefix: /1)
 	http://x.bgy.xxx/metaphor/1/xxxx/
-	- POST /user/create
-	- POST /user/login
-	- GET /user/logout
-	- /user/:id
-		- GET    info
-		- POST   update
-		- DELETE delete
-	- GET /user  (list users)
 
-## Topic
-	- /topic
-		- GET		list topics
-	- POST /topic/create
-	- /topic/:id
-		- DELETE 	delete
-		- GET		get content
-		- POST		update
-	- POST /topic/:id/article/create
-	- GET  /topic/:id/article
-	- /topic/:id/article/:article_id
-		- DELETE	delete
-		- GET		get content
-		- POST		update
-	- POST /topic/:id/photo/create
-	- GET  /topic/:id/photo
-	- /topic/:id/photo/:photo_id
-		- PUT		upload picture (return a URL to the link)
-		- DELETE	delete
-		- GET		get a photo directly
+	## Users
+		- POST /user/create
+		- POST /user/login
+		- GET /user/logout
+		- /user/:id
+			- GET    info
+			- POST   update
+			- DELETE delete
+		- GET /user  (list users)
 
-	- /admin (requires admin privilege)
-		- POST /usergroup/create
-		- GET  /usergroup   (list user groups)
-		- /usergroup/:id
-			- DELETE
-			- POST
-			- GET
-		- GET /privileges
+	## Topics
+		- /topic
+			- GET		list topics
+		- POST /topic/create
+		- /topic/:id
+			- DELETE 	delete
+			- GET		get content
+			- POST		update
+		- POST /topic/:id/article/create
+		- GET  /topic/:id/article
+		- /topic/:id/article/:article_id
+			- DELETE	delete
+			- GET		get content
+			- POST		update
+		- POST /topic/:id/photo/create
+		- GET  /topic/:id/photo
+		- /topic/:id/photo/:photo_id
+			- PUT		upload picture (return a URL to the link)
+			- DELETE	delete
+			- GET		get a photo directly
+
+	## Admin
+		- /admin (requires admin privilege)
+			- POST /usergroup/create
+			- GET  /usergroup   (list user groups)
+			- /usergroup/:id
+				- DELETE
+				- POST
+				- GET
+			- GET /privileges
 
 
+# Todo
+	- Photograph topics
+	- Message and notification system
+	- Comment system on topics
